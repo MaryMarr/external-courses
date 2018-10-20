@@ -10,7 +10,7 @@ function analogueSlice (arr, num1, num2) {
     return newArr;
   }
   if (num2 === undefined && num1 > 0) {
-    for (i = (num1 - 1); i < arr.length; i++) {
+    for (i = num1; i < arr.length; i++) {
       newArr.push(arr[i]);
     }
     return newArr;
