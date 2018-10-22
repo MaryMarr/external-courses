@@ -26,7 +26,7 @@ var Calculator = {
         return multiply;
     },
     reset: function () {
-        return this.result = 0;
+        this.result = 0;
     },
     getResult: function () {
         return this.result;
