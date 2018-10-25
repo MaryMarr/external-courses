@@ -55,7 +55,7 @@ describe('Ex4. JS Objects Part 2', () => {
         );
 
         task('10', code => it('should reverse string', () => expect(code('abc')).toBe('cba')));
-
+        
         task('11', code => {
             beforeAll(() => spyOn(console, 'log'));
 
