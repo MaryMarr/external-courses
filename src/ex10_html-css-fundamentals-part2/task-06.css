@@ -1,0 +1,24 @@
+a {
+	text-decoration: none;
+}
+
+a::after {
+	content: "|";
+	color: red;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:hover:after {
+	content: none;
+}
+
+#lastlink::after {
+	content: none;
+}
+
+#lastlink:hover {
+	text-decoration: none;
+}
