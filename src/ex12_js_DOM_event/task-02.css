@@ -1,0 +1,36 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p {
+    padding: 10px;
+    text-indent: 25px;
+    text-align: justify;
+}
+.accordeon {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item {
+    width: 80%;
+    background: rgb(255, 253, 146);  
+    margin-bottom: 10px;
+}
+.heading {
+   text-align: center;
+
+}
+.open {
+    display: block;
+}
+.close {
+    display: none;
+}
