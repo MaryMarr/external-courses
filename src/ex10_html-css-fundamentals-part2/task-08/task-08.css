@@ -43,8 +43,7 @@ list-style: none;
 width:500px;
 }
 .header__logo {
-    width: 85%;
-    display: flex;
+    display: inherit;
 }
 
 .header__logo-pic {
@@ -54,10 +53,6 @@ width:500px;
     background-position: center center;
     width:65%;
     height: 120px;
-}
-
-.header__contacts{
-    display: flex;
 }
 
 .contacts {
@@ -80,13 +75,13 @@ width:500px;
 }
 
  .contacts__link {
-    display: flex;
     align-items: center;
-    margin-right: 14px;
+    margin-right: 12px;
     height: 29px;
  }
 
  .contacts__icon {
+    margin-right: 14px;
     width: 30px;
     height: 40px;
 }
@@ -139,8 +134,6 @@ width:500px;
     border-top: 1px solid #CACACA;
 }
 .nav__container {
-    justify-content: space-between;
-    align-items: baseline;
     padding: 0;
 }
 
