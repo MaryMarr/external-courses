@@ -1,0 +1,27 @@
+table {
+    margin: 40px;
+    font-family: Arial, serif;
+    font-size: 15px;
+    color: #84889B;
+}
+table td:first-child {
+    text-transform: capitalize;
+}
+th {
+    padding: 6px;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center; 
+}
+table td {
+    padding: 16px 14px;
+}
+table tr:nth-child(even) {
+    background: #F2F6FA;
+}
+table tr:nth-child(odd) {
+    background: #E8EDF4;
+}
+table tr:hover {
+    background: #E2E5E9;
+}

@@ -1,0 +1,30 @@
+#table {
+    margin: 40px;
+    font-family: Arial, serif;
+    font-size: 15px;
+    color: #84889B;
+}
+#table th { 
+    padding: 6px;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+}  
+#table td {
+    padding: 16px 14px;
+}
+.headline {
+    background: #E3EAF3;
+}
+.customer {
+    text-transform: capitalize;
+}
+.row-odd {
+    background: #F2F6FA;
+}
+.row-even {
+    background: #E8EDF4;
+}
+#table tr:hover {
+    background: #E2E5E9;
+}
