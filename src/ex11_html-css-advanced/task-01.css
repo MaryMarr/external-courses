@@ -1,0 +1,13 @@
+img {
+    display: block;
+    width: 320px;
+    height: 320px;
+    margin: 30px auto;
+    clip-path: circle(50% at 50% 50%);
+}
+   
+.mask { 
+    -webkit-mask-size:320px;
+    -webkit-mask-image: url(mask.png);
+    mask-image: url(mask.png);
+}
