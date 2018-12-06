@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task</title>
+    <link rel="stylesheet" href="task-01.css">
+</head>
+
+<body>
+    <div class="form-wrapper">
+    <h3>Form Here</h3>
+    <p id="p">* required fields </p>
+    <hr>
+    <form action="url" method="post">
+        <ul class="form">
+            <li>
+                <label for="name"> Name: </label>
+                <input class="input" type="text" id="name" placeholder="placeholder text">
+            </li>
+            <li>
+                <label for="email">Email: </label>
+                <input class="input" type="email" id="email" placeholder="placeholder text" required>
+                <div class="figure">Form field hint</div>
+             </li>
+            <li>
+                <label for="website">Website: </label>
+                <input class="input" type="url" id="website" placeholder="placeholder text" required>
+                <div class="figure">Form field hint</div>
+            </li>
+            <li>
+                <label for="message" >Message: </label>
+                <textarea id="message"></textarea>
+            </li>
+            <li>
+                <input class="submit" type="submit" value="Submit">
+            </li>
+        </ul>
+    </form>
+    </div>
+</body>
+
+</html>

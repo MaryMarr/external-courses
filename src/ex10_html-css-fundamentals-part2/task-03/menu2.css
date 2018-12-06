@@ -1,0 +1,16 @@
+table {
+    width:40%; 
+    border:0px;
+}
+.one {
+    background-color: #aaa;
+    width:50%;
+}
+.two {
+    width:50%;
+}
+.iframe{
+    width:100%; 
+    height:100%;
+     
+}
