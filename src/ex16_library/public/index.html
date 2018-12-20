@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Library</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class=" wrapFormBook">
+        <div><span>Add a book</span>
+            <input type="button" value="&times;" id='closeWindow' onclick="closeWindow()">
+        </div>
+        <form action="url" method="post" id='formBook'>
+            <ul class="form">
+                <li>
+                    <label for="name"> Title: </label>
+                    <input class="input" type="text" id="name" placeholder="title" name="title" required>
+                </li>
+                <li>
+                    <label for="author"> Author: </label>
+                    <input class="input" type="text" id="author" placeholder="author" required name="author">
+                </li>
+                <li>
+                    <label for="description">Description: </label>
+                    <input class="input" type="text" id="description" placeholder=" description" name="description">
+                </li>
+                <li>
+                    <label for="created_at">Created at:</label>
+                    <input class="input" type="text" id="created_at" placeholder=" created at" name='created_at'>
+                </li>
+                <li>
+                    <input class="submit" type="submit" value="Add a book">
+                </li>
+            </ul>
+        </form>
+    </div>
+    <div class='popup'>
+        <p>Книга успешно добавлена!</p>
+    </div>
+    <div class='wrapper'>
+    <header>
+    </header>
+    <section>
+        <aside>
+            <div class="aside-button">
+                <input type="button" class="button" value="+     add a book" id='addBook'>
+            </div>
+            <div class="aside-nav">
+                <a href="#" class="nav-item">
+                    <img src="img/book.svg" alt="image" class="item-icon">
+                    <span>Now reading</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <img src="img/earth.svg" alt="image" class="item-icon">
+                    <span>Browse</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <img src="img/shopping-cart.svg" alt="image" class="item-icon">
+                    <span>Buy books</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <img src="img/star.svg" alt="image" class="item-icon">
+                    <span>Favourite Books</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <img src="img/wishlist.svg" alt="image" class="item-icon">
+                    <span>Wishlist</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <img src="img/clock.svg" alt="image" class="item-icon">
+                    <span>History</span>
+                </a>
+            </div>
+            <div class="aside-selections">
+                <ul class="selections-list">
+                    <li class="selections-link">
+                        <a href="#">must read titles</a>
+                    </li>
+                    <li class="selections-link">
+                        <a href="#">best of list</a>
+                    </li>
+                    <li class="selections-link">
+                        <a href="#">classic novels</a>
+                    </li>
+                    <li class="selections-link">
+                        <a href="#">non fiction</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="aside-history-item">
+                    <li>
+                        <small> You added</small> Fight Club
+                        <small>by</small> Chuck Palahniuk <small>
+                            to your </small> Must Read Titles
+                    </li>
+                    <li class="aside-history-time">
+                        <small>48 minutes ago</small>
+                    </li>
+                </ul>
+                <ul class="aside-history-item">
+                    <li>
+                        <small>You added </small>The Trial
+                        <small>by</small> Franz Cafka
+                        <small> to your </small> Must Read Titles
+                    </li>
+                    <li class="aside-history-time">
+                        <small>48 minutes ago</small>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </section>
+    <article>
+        <div class='header'>Browse Available Books</div>
+        <div class='article-nav'>
+            <div class='article-nav-a'>
+                <a href=# onclick="getAllBooks()">All books</a>
+                <a href="#" onclick="mostRecent()"> Most Recent</a>
+                <a href="#" onclick="mostPopular()">Most Popular</a>
+                <a href="#" onclick="freeBooks ()">Free Books</a>
+            </div>
+            <div class="article-search">
+                <input type="text" value="" id="searchTxt" class="nav-search-input" placeholder="Enter Keywords" onkeyup="searchInput()">
+                <input type="button" class="nav-search-btn" onclick="searchButton()">
+            </div>
+        </div>
+        <div id='books-list' id='img'></div>
+    </article>
+    <footer></footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
